@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Shop</title>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+           <div class="col-md-10 mt-5 pt-5">
+               <div class="row z-depth-3">
+                   <div class="col-sm-4 bg-info rounded-left">
+                       <div class="card-block text-center text-white">
+                           <i class="fas fa-user-tie fa-7x mt-5"></i>
+                           <h2 class='font-weight-bold mt-4' id='cust_name'>Nickson</h2>
+                           <p id='cust_id'> Id </p>
+                            
+                       </div>
+                   </div>
+                   <div class='col-sm-8 bg-white rounded-right'>
+                       <h3 class="mt-3 text-center">Information</h3>
+                       <div class="row">
+                           <div class="col-sm-6">
+                               <p class="font-weight-bold">Address:</p>
+                               <h6 class='text-muted' id='cust_add'>$(Address)</h6>
+                           </div>
+                           <div class="col-sm-6">
+                                <p class="font-weight-bold">Phone:</p>
+                                <h6 class='text-muted' id=cust_phone>$(Phone)</h6>
+                            </div>
+                       </div>
+                       <div class='row'>
+                            <div class="col-sm">
+                                <p class="font-weight-bold">About:</p>
+                                <h6 class='text-muted' id='cust_about'>$(About)</h6>
+                            </div>
+                       </div>
+                       <div class="row">
+                            <div class="col-sm-6">
+                                <p class="font-weight-bold">Likes:</p>
+                                <h6 class='text-muted' id='cust_likes'>$(Likes)</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="font-weight-bold">Dislikes:</p>
+                                <h6 class='text-muted' id="cust_dislikes">$(Dislikes)</h6>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </div> 
+        </div>
+    </div>
+    <div class='container'>
+        <table id='personal_info'></table>
+    </div>
+    
+</body>
+</html>
