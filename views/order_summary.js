@@ -8,7 +8,8 @@ $(function () {
     .then((data) => {
       var users = data;
       personal_data = data.itemsOrdered;
-      console.log(data);
+      rest_data = data.restaurant;
+      console.log(rest_data);
 
       var table = document.getElementById("myTable");
 
@@ -24,5 +25,11 @@ $(function () {
 
         table.innerHTML += row;
       }
+
+      document.getElementById('rest_name').innerHTML = rest_data.name;
+      document.getElementById('rest_street').innerHTML = rest_data.street;
+      document.getElementById('rest_city').innerHTML = rest_data.city;
+      document.getElementById('rest_state').innerHTML = rest_data.state;
+      document.getElementById('rest_zip').innerHTML = rest_data.zipcode;
     });
 });

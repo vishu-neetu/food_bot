@@ -18,8 +18,41 @@
     <title>Document</title>
 </head>
 <body>
-    <div text-align="center">
+    <div class="text-center">
         <h2>Order Summary</h2>
+    </div>
+    
+    <div class='col-sm-8 bg-white'>
+        
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="font-weight-bold">Name:</p>
+                <h6 class='text-muted' id='rest_name'>$(Name)</h6>
+            </div>
+            <div class="col-sm-6">
+                 <p class="font-weight-bold">Street:</p>
+                 <h6 class='text-muted' id=rest_street>$(Street)</h6>
+             </div>
+             <div class="col-sm-6">
+                <p class="font-weight-bold">City:</p>
+                <h6 class='text-muted' id='rest_city'>$(City)</h6>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-sm-6">
+                 <p class="font-weight-bold">State:</p>
+                 <h6 class='text-muted' id='rest_state'>$(State)</h6>
+             </div>
+             <div class="col-sm-6">
+                 <p class="font-weight-bold">Zipcode:</p>
+                 <h6 class='text-muted' id="rest_zip">$(Zipcode)</h6>
+             </div>
+         </div>
+    
+    </div>
+    
+    <div class='text-center'>
+        Food Orderd
     </div>
     <table class="table table-striped">
         <tr  class="bg-info">
@@ -35,5 +68,8 @@
             
         </tbody>
     </table>
+    <div class="text-center">
+        Total
+    </div>
 </body>
 </html>
